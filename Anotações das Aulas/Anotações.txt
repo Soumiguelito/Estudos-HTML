@@ -1,0 +1,384 @@
+				ANOTAÇÕES AULA CSS- HTML
+
+INTRODUÇÃO AO VSCODE:
+
+- EXPLORER: ACESSA AS PASTAS DE ARQUIVOS COM OS PROJETOS NO VSCODE
+
+- SEARCH: BUSCA CONTEÚDO NO VSCODE.(INDICADO PARA QUANDO TIVER UM PROGRAMA MUITO GRANDE)
+  REPLACE: SUBSTITUI O NOME DO ARQUIVO.
+
+- PARA ADICIONAR NOVAS PASTAS OU ARQUIVOS BASTA CLICAR COM BOTÃO DIREITO E NEW FOLDER OU NEW FILE
+
+- PARA EXCLUIR QUALQUER OPÇÃO NO MENU, BASTA CLICAR COM BOTÃO DIREITO NO ÍCONE E DEPOIS EM RUN.
+
+
+INTRODUÇÃO AO HTML:
+
+- O HTML define o conteúdo para visualização do usuário escrito de maneira semântica.
+
+- Usar tag de abertura e de fechamento. Ex: <h1> Meu nome é Miguel </h1>
+
+- Tag <h1> = é a tag utilizada para o cabeçalho (header) de uma página web. 
+	
+- A tag H vai do h1 até o h6, porém é mais comum ser utilizada até o h3.
+	
+- Tag <p> = representa o parágrafo de um texto numa página web.
+
+- O HTML tem que ser SEMÂNTICO.
+
+COMO CRIAR CABEÇALHO (HEADER):
+
+- <nav> = agrupa uma lista de links para navegação dentro de um site, acessando as demais partes do site.
+
+- tag de link = <a>
+
+- O HTML cuida de todo o conteúdo
+
+- Deve ser usar as tags de forma semântica no HTML
+
+- Estruturar o HTML de maneira correta utilizandos as tags
+
+- Sempre Identar o código com o "Tab"
+
+DEVO USAR COMENTÁRIOS NO CÓDIGO:
+
+- Não se deve comentar explicando o código
+
+- Apenas comente para anotação de aprendizado no código
+
+COMO ESTRUTURAR O HTML:
+
+- Usar a tag <title> para personalizar a aba de pesquisa no navegador.
+
+- usar o charset para definir as caracteres a serem utilizados. <meta charset="utf-8>
+
+- Usar a tag <head> para armazenar todas as configurações do código.
+		Ex:
+			<head>
+				<meta charset="utf-8>
+				<title>Loja Nome></title>
+			</head>
+
+- Usar a tag <body> para todo o código que não está no head que seria a parte externa do código.
+		Ex:
+			<body>
+				<header>
+    					<img src="Assets/img/logo mulher chinesa.jpg"></img>
+
+    					<nav> 
+           				 	<a href="" lang="PT-BR"> Quem somos</a>
+            				 	<a href=""> Produtos</a> 
+            			         	<a href=""> Contato</a>
+            				 	<a href=""> Conta</a>
+    					</nav>
+				/header>
+			</body>
+
+- Usar <!DOCTYPE html> para que o navegador utilize a versão mais estável do html para leitura do código.
+
+- <!DOCTYPE html> deve ser escrito no topo do código.
+
+
+ATRIBUTO GLOBAL:
+
+- lang = (idioma) para determinar a leitura daquela palavra com o idioma correto.
+		Ex:
+			 <a href="" lang="PT-BR"> Quem somos</a>
+ 
+- Usar <html lang=-"pt-BR"> no inicio para que o código seja lido em portugues brasileiro pelo navegador. 
+
+USO DO EMMET:
+
+- EMMET É UMA EXTENSÃO DE TEXTO PARA ESCREVER O CÓDIGO HTML E CSS.
+- O EMMET ABREVIA ALGUNS COMANDOS NA HORA DE ESCREVER O CÓDIGO
+		Ex:  A estrutura do !DOCTYPE, basta digitar ! + Enter para a estutura ser gerada automaticamente.
+
+INTRODUÇÃO AO CSS:
+
+- CSS (Cascading Style Sheet) é usado para personalizar caracteres escritos em uma linguagem HTML.
+
+- O CSS separa o conteúdo da representação visual da página.
+
+COMO IMPORTAR O CSS:
+
+- NO CSS A ATRIBUIÇÃO NÃO É FEITA PELO = COMO O HTML E SIM O :
+	EX: <header style= "background-color: yellow;">
+
+- A MELHOR FORMA DE IMPORTAR O CSS É ISOLAR O CSS EM UM ARQUIVO E O HTML EM OUTRO ARQUIVO.
+		EX: Siteloja.html (arquivo html com o código da estrutura do site)
+		    IndexSiteloja.css (arquivo que contém o código para a parte visual)
+
+
+SISTEMAS DE CORES:
+
+- CORES SÃO REPRESENTADAS PELA SIGLA RGB (RED, GREEN, BLUE).
+
+- O SISTEMA PODE SER DECIMAL (0 A 9) E HEXADECIMAL (0 A 9 E DE A ATÉ F).
+
+- A VARIAÇÃO DE CORES É DE 0 A 265 CORES DISPONIVEIS.
+
+- RGB É PROJETADO PARA MONITORES, SENDO ASSIM, O SISTEMA DE COR É FOCADO EM LUZ.
+
+- AO EMITIR UMA COR É NECESSÁRIO UTILIZAR O #.
+
+- #000 = COR PRETA E #FFF = COR BRANCA
+
+
+
+
+
+RESET CSS:
+
+- FAZ COM QUE O CSS REMOVA QUAISQUER PROBLEMAS QUE TENHAM NO NAVEGADOR, EVITANDO BUGS NO CSS
+
+* COMO REMOVER A MARGEM/ESPAÇAMENTO NO LAYOUT PELO <BODY>:
+
+	body{
+
+		margin: 0;
+	}
+
+	-> Deve se linkar o css no html sempre com o reset sendo o primeiro link e depois os demais.
+
+		Exemplo: 
+			<link rel="stylesheet" href="css/reset.css">
+			<link rel="stylesheet" href="css/index.css">  	
+
+
+
+
+
+CSS MENU DE NAVEGAÇÃO:
+
+- ALTERAR FONTES ACESSANDO O FIGMA E DANDO DUPLO CLICK NO CONTEÚDO ESCRITO, DENTRO DO FIGMA EM INSPECIONAR
+IRÁ MOSTRAR TANTO A FONTE QUANTO O TAMANHO DA LETRA.
+
+- USE O FONT-FAMILY + "NOME DA FONTE" NO CSS, DENTRO DO VS CODE PARA ALTERAR O TIPO DA FONTE NO SITE.
+
+- UTILIZE O GOOGLE FONTS PARA USAR FONTES ALÉM DAS DISPONÍVEIS NO SISTEMA OPERACIONAL.
+
+* PARA ADICIONAR UMA FONTE NOVA NO GOOGLE FONTS, BASTA PESQUISAR A FONTE PELO NOME, EM SEGUIDA, SELECIONAR O TAMANHO
+E COPIAR O LINK HTML GERADO E COLAR NO CSS NO INICIO PARA BAIXAR A FONTE. 
+
+
+
+- CODIGO CSS PARA DEFINIÇÃO DO MENU/CABEÇALHO:
+
+	    header{ -> CABEÇALHO
+        background-color: black; -> COR DE FUNDO
+    }
+
+        a{
+            color: #fff; -> ESCOLHE A COR (FFF COR BRANCA)
+            font-size: 20px; -> TAMANHO DA FONTE
+            font-family: "Fira Code"; -> TIPO DA FONTE
+            font-weight: 500; -> LARGURA DA FONTE
+            font-style: normal; -> ESTILO DA FONTE (NORMAL, ITALICO, ETC.)
+            text-decoration: none; -> DECORAÇÃO NO TEXTO (LINK, TRAÇOS, ETC.)
+            margin-right: 30px; -> ESPAÇAMENTO ENTRE OS TEXTOS A PARTIR DA DIREITA
+        }
+
+
+- SE O SISTEMA NÃO ENCONTRAR A FONTE, É POSSÍVEL USAR O FALLBACK PARA SELECIONAR UM OUTRO TIPO DE FONTE.
+
+	*EXEMPLO:  font-family: "Fira Code", Arial, Helvetica, sans-serif;
+	* san-serif == fontes mais personalizadas
+	* serif	== fontes padrão
+
+
+
+COMO ESTILIZAR UM BOTÃO: 
+
+- USAR ID"NOME" PARA IDENTIFICAR UMA LINHA COMO ÚNICA E PODER PERSONALIZAR O CONTEÚDO(botão)
+
+- NÃO É POSSIVEL USAR MAIS DE UM ID COM O MESMO NOME
+
+	* EXEMPLO:
+			<a href="" lang="en" >Skills</a>
+            		<a href=""  >Projetos</a>
+           	 	<a href=""  >Sobre</a>
+            		<a href=""  >Contatos</a>
+            		<a id="button" lang="en" >Download CV</a>
+			(id="button" irá personalizar o botão Download)
+
+
+
+- O ID DEVE SER REFERENCIADO NO CSS PARA QUE POSSA FUNCIONAR NO HTML (#IDNOME)
+
+	* EXEMPLO:
+		 #button{ -> #button é a referencia em css do id usado no código para personalizar o botão.
+            		display: inline-block; -> Permite com que possa definir a altura e largura dos textos.
+            		background-color: blue;
+           		height: 60px; -> Altura do texto.
+            		line-height: 60px; -> Define a altura que o texto ira ocupar na linha sem alterar o seu tamanho.
+            		padding-left: 20px; -> espaçamento do conteúdo à direita.
+            		padding-right: 20px; -> espaçamento do conteúdo à esquerda.
+            		box-shadow: 5px 5px 0px 0px black; -> Box shadow gera o sombreamento do botão.
+    }    
+
+- PADDING DETERMINA O ESPAÇAMENTO DO CONTEÚDO, MARGIN DETERMINA O ESPAÇO FORA DO CONTEÚDO.    
+
+
+PROPRIEDADE DISPLAY:
+
+- COLOR = ALTERA COR DA FONTE
+
+- BACKGROUND COLOR = ALTERA COR DE FUNDO
+
+- FONT SIZE = ALTERA  TAMANHO DA FONTE
+
+- A PROPRIEDADE DISPLAY DETERMINA O TANTO DE ESPAÇO QUE O ELEMENTO IRÁ OCUPAR, SEJA A LINHA TODA OU UMA PARTE MENOR.
+
+- PROPRIEDADE QUE CONTROLA OS ESPAÇOS DOS ELEMENTOS CRIADOS NA TELA.
+
+
+
+COMO FUNCIONA O DISPLAY INLINE BLOCK:
+
+- ORGANIZA OS ELEMENTOS LADO A LADO EM UMA LINHA, ONDE PODEMOS DEFINIR A LARGURA E ALTURA DESTES ELEMENTOS.
+
+- DISPLAY INLINE BLOCK NÃO É IGNORADO PELO NAVEGADOR.
+
+- NÃO É POSSIVEL ALTERAR FAZER TUDO EM UMA LINHA COM ESTE DISPLAY. 
+
+
+
+COMO FUNCIONA O DISPLAY INLINE:
+
+- TODA TAG <a UTILIZA O DISPLAY INLINE
+
+- O DISPLAY INLINE DEIXA OS ELEMENTOS UM DO LADO DO OUTRO ALINHADOS.
+
+- DEIXA TODOS OS ELEMENTOS POSICIONADOS NA ESQUERDA O MÁXIMO POSSÍVEL FORMANDO UMA LINHA A PARTIR DO PRIMEIRO ELEMENTO.
+
+- MANTÉM TODOS OS ELEMENTOS EM UMA MESMA LINHA.
+
+- O DISPLAY INLINE NÃO PERMITE UTILIZAR 2 PROPRIEDADES QUE SÃO O WIDTH (ALTURA) HEIGHT (LARGURA).
+
+
+
+- TODA TAG <a TEM O COMPORTAMENTO DE UMA PALAVRA.
+	*Exemplo:
+		<a href="" lang="en" >Skills</a> = A TAG É CONSIDERADA UMA PALAVRA
+
+
+
+- ALGUMAS PROPRIEDADES MUDAM O EFEITO DO TEXTO (COLOR) E OUTROS MUDAM O EFEITO DA CAIXA (BACKGROUND).
+
+
+- TEXT ALIGN CENTRALIZA TODO O TEXTO NO BACKGROUND DO SITE
+	* Exemplo:
+		 	nav{
+        			background-color: black;  
+       		 		text-align: center;      -> ALINHA O TEXTO NO CENTRO DO BANNER DO SITE
+    			}
+		
+- TEXT ALIGN: JUSTIFY ALINHA TODO UM TEXTO DISTRIBUINDO O TEXTO CORRETAMENTE ALINHADO.
+
+- O QUE DEFINE O TAMANHO DA CAIXA É O TAMANHO DO CONTEÚDO DENTRO DA CAIXA NO DISPLAY INLINE.
+ 
+
+
+COMO FUNCIONA O DISPLAY BLOCK:
+
+
+- DISPLAY BLOCK UTILIZA TODA A LINHA MESMO QUE O ELEMENTO NÃO PREENCHA TODA ESSA LINHA. 
+- UM ELEMENTO PODE OCUPAR TODA UMA LINHA.
+- O BLOCK NÃO MANTÉM OS MESMOS ELEMENTOS EM UMA ÚNICA LINHA COMO O INLINE.
+- O ELEMENTO QUE ESTIVER NO BLOCK SOBREPÕE A OUTRO ELEMENTO QUE NÃO SEJA BLOCK, O MOVENDO PARA A LINHA ABAIXO. 
+- NAV É UM DISPLAY BLOCK.
+- O DISPLAY BLOCK NÃO TEM UM COMPORTAMENTO DE PALAVRA, ASSIM O TEXT ALIGN NÃO SERVE.
+- O LIMITE DE TAMANHO DO ELEMENTO É DETERMINADO PELO TAMANHO DA LINHA. "O TAMANHO DO FILHO SEGUE O TAMANDO DO PAI".
+		
+		*Exemplo:
+			<header>
+				<nav>  		--> 	O TAMANHO DE NAV (FILHO) 
+				</nav>			É DETERMINADO PELO TAMANHO DE HEADER (PAI)
+			</header>
+
+- O QUE DEFINE A ALTURA SÃO OS CONTEÚDOS (FILHO). 
+
+
+DIFERENÇA ENTRE MARGIN X PADDING:
+
+- MARGIN CUIDA DO ESPAÇO (RESPIRO) EXTERNO DO OBJETO, FACILITANDO A VISUALIZAÇÃO DAS IMAGENS DO SITE
+	*MARGIN TEM VARIAÇÕES:
+				MARGIN-TOP -> APLICA A MARGEM SOMENTE NA PARTE SUPERIOR
+
+- PADDING CUIDA DO ESPAÇO (RESPIRO) INTERNO DO OBJETO
+	* PADDING TEM VARIAÇÕES:
+				PADDING-TOP  
+				PADDING-LEFT 	-> É POSSÍVEL ESCOLHER O LADO QUE DESEJA TER O ESPAÇO
+				PADDING-RIGHT
+
+ 				PADDING 	-> ALTERA TODOS OS LADOS AO MESMO TEMPO.
+
+
+- MARGIN NÃO FAZ PARTE DO BACKGROUND
+
+- PADDING FAZ PARTE DO BACKGROUND
+
+- PADDING ALTERA O TAMANHO DO ELEMENTO QUE ESTA PRESENTE NO BACKGROUND
+
+
+
+FORMA ESPECÍFICA E RESUMIDA DAS PROPRIEDADES NO CSS:
+
+- FORMA ESPECÍFICA DETERMINA UM UNICO VALOR DA PROPRIEDADE
+		
+		* EXEMPLO:
+			PADDING-TOP 10PX; -> DETERMINA DA PROPRIEDADE PADDING APENAS O TOPO.
+
+- FORMA RESUMIDA DETERMINA TODOS OS VALORES DA PROPRIEDADE EM UM ÚNICO COMANDO:
+
+		* EXEMPLO: 
+			PADDING 18PX, 20PX, 14PX; -> EM UM ÚNICO COMANDO DETERMINA O TAMANDO DE TODOS OS LADOS E O BOTÃO.
+
+- QUAL A ORDEM DOS TAMANHOS EM UM FORMA RESUMIDA POR 3 VALORES:
+		
+		PADDING 18PX (TOPO / BOTÃO) , 20PX (DIREITO / ESQUERDO), 14PX (BOTÃO, SOBREPÕE O TAMANHO INICIAL);
+		* DA ESQUERDA PRA DIREITA E DE CIMA PRA BAIXO.
+
+
+O QUE É UM PÍXEL ?
+
+- PIXEL É UM PONTO DE LUZ GERADO NO SEU MONITOR (LUZ BRANCA OU RGB)
+- RGB É COMPOSTO PELAS CORES (VERMELHO, AZUL E VERDE)
+- DPI = REPRESENTA A QUANTIDADE DE PONTOS DE LUZ (PIXEL) DENTRO DE OUTRO PIXEL.
+
+
+DETALHES NO ITEM DO MENU DO LAYOUT:
+
+- NAO PODE TER NENHUMA TAG SEM VALOR NO HTML SENÃO ELE NÃO É VALIDO
+		*Exemplo: 
+			<span></span>  o correto é ter um valor entre essa tag: <span>x</span>
+
+- DISPLAY INLINE-FLEX ALINHA UM QUADRADO OU UM ITEM(SPAN) AO LADO DO TEXTO SEM PRECISAR USAR O DISPLAY INLINE BLOCK NO TEXTO E NO ITEM (SPAN)
+						
+
+- PARA ALINHAR UM ITEM JUNTO A UM TEXTO É PRECISO USAR O ALIGN-ITEMS APÓS O DISPLAY: INLINE-FLEX
+
+- PARA EVITAR QUE O HTML POSSUA UMA TAG VAZIA O IDEAL É CRIAR UM PSEUDO ELEMENTO (UM ELEMENTO QUE NÃO EXISTE)
+	* Exemplo: 
+			  a::before{
+            				content: "";     -> NO HTML SEMPRE TEM QUE HAVER UM CONTEÚDO MESMO QUE SEJA VAZIO.
+            				background-color: #fff;
+            				width: 10px;
+            				height: 10px;
+            				margin-right: 8px;
+            			  }
+
+- PSEUDO ELEMENTOS SÃO CRIADOS POR :: 
+
+- PSEUDO CLASSE SÃO CRIADAS POR : 
+
+
+FINALIZANDO O HEADER:
+
+- USE O BORDER PARA CRIAR UMA BORDA NO CABEÇALHO (EX: BORDER: 10PX SOLID #COLOR;) -> 10px = TAMANHO, SOLID = TIPO DE BORDA
+- BORDER WIDTH DETERMINA O TAMANHO DA BORDA
+- JUSTIFY - SPACE BET
+- DISPLAY FLEX ALINHA TODOS OS ELEMENTOS UM UMA UNICA LINHA
+- USE O JUSTIFY-CONTENT: SPACE BETWEEN PARA ORDERNAR TODOS OS ELEMENTOS PELAS SUAS EXTREMIDADES.
+
+

@@ -1,0 +1,27 @@
+.main-banner{
+    box-sizing: content-box;
+    background-image: url(../../Assets/img/Foto\ kuase\ developer.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 740px;
+    border-bottom: solid 10px black;
+}
+
+/* respiro no box  */
+.main-banner .main-box{   
+        margin-bottom: 40px;
+        margin-top: 115px;
+}
+
+.main-banner .wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 640px;
+    margin-left: 90px;
+}
+
+.main-banner .navigation{
+        display: flex;
+        justify-content: space-around;
+}
+

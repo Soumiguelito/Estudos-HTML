@@ -1,0 +1,26 @@
+.main-section {
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    border-bottom: 10px  solid blue;
+}
+
+.main-section .main-title {
+    margin-bottom: 40px;
+}
+
+.main-section.-backcolor {
+   background-color: black;
+}
+
+.main-section.-bdcolor{
+    border-color: blue;
+}
+
+.main-section.-bgcolor{
+    background-color: darkblue;
+}
+
+.main-section.-bdsecondcolor{
+        border-color: black;
+}
