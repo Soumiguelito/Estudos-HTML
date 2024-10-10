@@ -10,6 +10,7 @@
     text-decoration: none;
     color: aliceblue;
     font-weight: 500;
+    cursor: pointer;
 }        
 
 .main-button:hover{
@@ -19,4 +20,8 @@
 
 .main-button.-fullbutton{
     width: 100%;
+}
+
+.main-button.-fullbutton:hover{
+    transform: scale(1.02);
 }
